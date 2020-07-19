@@ -8,11 +8,13 @@ import SEO from "../components/seo"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
 import ContactForm from "../components/ContactForm"
+import NavBar from "../components/NavBar"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>WELCOME TO MORE SECURE</h1>
+    <NavBar />
+    {/* <h1>WELCOME TO MORE SECURE</h1> */}
     <OurValue />
     <Customers />
     <ContactForm />
