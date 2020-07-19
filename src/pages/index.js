@@ -7,6 +7,7 @@ import Footer from "../components/Footer"
 import SEO from "../components/seo"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
+import ContactForm from "../components/ContactForm"
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <h1>WELCOME TO MORE SECURE</h1>
     <OurValue />
     <Customers />
+    <ContactForm />
     <Footer />
     {/* <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
