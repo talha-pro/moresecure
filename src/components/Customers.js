@@ -17,7 +17,7 @@ const Customers = () => {
             <div className="heading">Customers Proudly Served</div>
           </Col>
         </Row>
-        <div className="space-3"></div>
+        <div className="space-4"></div>
         <Row>
           <Col className="customers__col--logos">
             <Image className="customers__logo" src={innovapost} fluid={true} />

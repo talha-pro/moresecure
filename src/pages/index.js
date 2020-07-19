@@ -6,11 +6,13 @@ import Image from "../components/image"
 import Footer from "../components/Footer"
 import SEO from "../components/seo"
 import Customers from "../components/Customers"
+import OurValue from "../components/OurValue"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>WELCOME TO MORE SECURE</h1>
+    <OurValue />
     <Customers />
     <Footer />
     {/* <Link to="/page-2/">Go to page 2</Link> <br />
