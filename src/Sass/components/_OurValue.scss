@@ -1,9 +1,16 @@
 .ourvalue {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 50vh;
-  //   border: 1px solid black;
+  min-height: 70vh;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(204, 233, 255, 1) 70%
+  );
 
   &__container {
     display: flex;
@@ -20,7 +27,6 @@
     font-family: "poppins", sans-serif;
     font-weight: 700;
     font-size: 3.6rem;
-    // border: 1px solid red;
     text-align: center;
     color: #525252;
   }
@@ -31,6 +37,18 @@
     line-height: 4.6rem;
     text-align: center;
     color: #2f2f2f;
-    // margin-left: -5rem;
+  }
+
+  &__upper-svg {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: -8rem;
+  }
+  &__lower-svg {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -12rem;
   }
 }

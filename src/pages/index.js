@@ -222,6 +222,7 @@ const IndexPage = () => (
     <div className="space-4"></div>
     <div className="space-4"></div>
     <Footer />
+
     {/* <h1>WELCOME TO MORE SECURE</h1>
     <HomePage />
     <div className="space-4"></div>
