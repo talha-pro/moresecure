@@ -13,7 +13,7 @@ const Customers = () => {
     <section className="customers">
       <Container className="customers__container">
         <Row>
-          <Col>
+          <Col className="customers__col">
             <div className="heading">Customers Proudly Served</div>
           </Col>
         </Row>

@@ -4,6 +4,12 @@
   height: 50vh;
   //   border: 2px solid red;
 
+  &__col {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+
   &__col--logos {
     display: flex;
     flex-flow: row wrap;
