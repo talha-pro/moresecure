@@ -20,16 +20,16 @@ const NavBar = () => {
             <Link className="nav__item" to="/">
               Services
             </Link>
-            <Link className="nav__item" to="/">
+            <Link className="nav__item" to="/DigitalTransformation/">
               Store
             </Link>
-            <Link className="nav__item" to="/">
+            <Link className="nav__item" to="/Infrastructure">
               Blog
             </Link>
             <Link className="nav__item" to="/About">
               About
             </Link>
-            <Link className="nav__item" to="/">
+            <Link className="nav__item" to="/Security">
               Contact
             </Link>
           </Col>
