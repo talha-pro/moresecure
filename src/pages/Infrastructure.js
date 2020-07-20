@@ -66,8 +66,8 @@ const Infrastructure = () => {
               </div>
             </Col>
           </Row>
-          <Row className="digital__row">
-            <Col className="digital__col">
+          <Row className="infra__row">
+            <Col className="infra__col">
               <div className="heading">
                 Kubernetes Benefit for Your Business
               </div>
