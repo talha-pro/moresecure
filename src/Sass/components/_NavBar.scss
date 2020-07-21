@@ -99,13 +99,14 @@
 
       ul {
         position: absolute;
-        left: 0;
+        left: -60%;
         margin: 0;
         background: white;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
         box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.1);
         display: none;
+        width: max-content;
 
         > li {
           clear: both;
