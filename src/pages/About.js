@@ -5,9 +5,7 @@ import { Link } from "gatsby"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 import ContactForm from "../components/ContactForm"
-import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
-
 import innovapost from "../assets/Customers/innovapost.png"
 import worldvision from "../assets/Customers/worldvision.png"
 import nrt from "../assets/Customers/nrt.png"
@@ -235,7 +233,6 @@ const About = () => {
         </Container>
       </section>
       <OurValue />
-      <Customers />
       <ContactForm />
       <Footer />
     </>
