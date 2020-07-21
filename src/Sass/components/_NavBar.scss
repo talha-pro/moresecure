@@ -107,18 +107,16 @@
         box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.1);
         display: none;
         width: max-content;
+        overflow: hidden;
 
         > li {
           clear: both;
           list-style: none;
           display: block;
           padding: 0 1rem;
-          margin: 0;
-          border-bottom-left-radius: 1rem;
-          border-bottom-right-radius: 1rem;
+          // margin: 0;
           width: 100%;
           text-align: center;
-
           &:hover {
             background: #fa5959;
             box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.1);
