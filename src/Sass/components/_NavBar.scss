@@ -49,7 +49,7 @@
 
     &:hover {
       transition: all 0.3s ease-in-out;
-      color: #70add8;
+      color: #fa5959;
     }
   }
 
@@ -76,7 +76,7 @@
         margin-top: 0.5rem;
 
         &:hover {
-          color: #70add8;
+          color: #fa5959;
           border-radius: 0.2rem;
         }
 
@@ -119,10 +119,10 @@
           text-align: center;
 
           &:hover {
-            background: #70add8;
+            background: #fa5959;
             box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.1);
             > a {
-              background: #70add8;
+              background: #fa5959;
               color: white;
             }
           }
