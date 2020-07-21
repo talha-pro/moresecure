@@ -17,19 +17,41 @@ const NavBar = () => {
             <Link className="nav__item" to="/">
               Home
             </Link>
-            <Link className="nav__item" to="/">
+            <div className="nav__item">
+              <ul className="nav__item-service">
+                <li className="dropdown">
+                  <a href="#" className="trigger-drop">
+                    Services<i className="arrow"></i>
+                  </a>
+                  <ul className="drop">
+                    <li>
+                      <Link to="/DigitalTransformation/">
+                        Digital Transformation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/Infrastructure">Infrastructure</Link>
+                    </li>
+                    <li>
+                      <Link to="/Security">Security</Link>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            {/* <Link className="nav__item" to="/">
               Services
-            </Link>
-            <Link className="nav__item" to="/DigitalTransformation/">
+            </Link> */}
+            <Link className="nav__item" to="/Store">
               Store
             </Link>
-            <Link className="nav__item" to="/Infrastructure">
+            <Link className="nav__item" to="/Blog">
               Blog
             </Link>
             <Link className="nav__item" to="/About">
               About
             </Link>
-            <Link className="nav__item" to="/Security">
+            <Link className="nav__item" to="/">
               Contact
             </Link>
           </Col>
