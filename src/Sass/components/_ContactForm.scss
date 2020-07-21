@@ -127,7 +127,7 @@
     width: 80%;
     background: #5a98d0;
     border-radius: 1rem;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.3);
     border: none;
     color: white;
     transition: all 0.5s;
@@ -135,8 +135,11 @@
     &:hover,
     &:focus {
       transition: all 0.5s;
-      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.3);
+      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.4);
       outline: none;
+    }
+    &:active {
+      transform: translateY(0.8rem);
     }
   }
 
