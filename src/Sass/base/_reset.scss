@@ -12,6 +12,54 @@ body {
   box-sizing: border-box;
 }
 
+.header {
+  position: relative;
+  padding-top: 15rem;
+  display: flex;
+  min-height: 80vh;
+  height: max-content;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(112, 173, 216, 1) 250%
+  );
+
+  &__svg {
+    position: absolute;
+    top: 65%;
+    // left: 5%;
+  }
+}
+
+.main-sub-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 500;
+  line-height: 4.6rem;
+  text-align: center;
+  color: #515050;
+  width: 100%;
+  margin: 5rem 0rem;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 6.4rem;
+  font-weight: 500;
+  line-height: 4.6rem;
+  text-align: center;
+  color: #262f72;
+  width: 100%;
+  margin: 5rem 0rem;
+}
+
 .heading {
   display: flex;
   justify-content: center;

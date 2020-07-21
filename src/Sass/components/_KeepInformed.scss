@@ -1,0 +1,25 @@
+.keep {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: "poppins", sans-serif;
+
+  &__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 4.6rem;
+    color: #282828;
+  }
+
+  &__input {
+    font-size: 1.8rem;
+    line-height: 4.6rem;
+    color: #515050;
+    background: #c4c4c4;
+    opacity: 0.4;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    width: 60%;
+  }
+}
