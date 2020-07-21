@@ -253,26 +253,6 @@ const IndexPage = () => (
     <div className="space-4"></div>
     <div className="space-4"></div>
     <Footer />
-
-    {/* <h1>WELCOME TO MORE SECURE</h1>
-    <HomePage />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <OurValue />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <Customers />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <ContactForm />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <Footer /> */}
-    {/* <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
   </Layout>
 )
 
