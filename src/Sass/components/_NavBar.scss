@@ -54,6 +54,7 @@
   &__item-service {
     color: #282828;
     position: relative;
+    margin-right: -3.5rem;
 
     li {
       float: left;
@@ -129,8 +130,8 @@
           text-align: center;
 
           &:hover {
-            // background: lighten($color-accent, 40);
             background: #70add8;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             > a {
               background: #70add8;
               color: white;
@@ -142,8 +143,8 @@
       &:hover {
         > .drop {
           display: block;
-          animation: fadeInRight 0.3s ease;
-          -webkit-animation: fadeInTop 0.3s ease;
+          animation: fadeInRight 0.5s ease;
+          -webkit-animation: fadeInTop 0.5s ease;
         }
       }
     }
