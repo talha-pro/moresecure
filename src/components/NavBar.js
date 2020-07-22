@@ -17,6 +17,7 @@ const NavBar = () => {
             <Link className="nav__item" to="/">
               Home
             </Link>
+
             <div className="nav__item">
               <ul className="nav__item-service">
                 <li className="dropdown">

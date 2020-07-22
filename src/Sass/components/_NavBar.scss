@@ -53,6 +53,12 @@
     }
   }
 
+  &__active {
+    &:focus {
+      color: #fa5959;
+    }
+  }
+
   &__item-service {
     position: relative;
     margin-right: -3.5rem;
