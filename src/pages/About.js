@@ -29,6 +29,7 @@ import enterasys from "../assets/About/enterasys.jpeg"
 import altor from "../assets/About/altor.png"
 import art from "../assets/About/art.png"
 import KeepInformed from "../components/KeepInformed"
+import security from "../assets/Homepage/security.svg"
 
 const About = () => {
   return (
@@ -46,7 +47,9 @@ const About = () => {
                 <KeepInformed />
               </div>
             </Col>
-            <Col className="header__right-col"></Col>
+            <Col className="header__right-col">
+              <Image src={security} fluid={true} />
+            </Col>
           </Row>
           <div className="space-4"></div>
           <div className="space-4"></div>

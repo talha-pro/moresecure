@@ -4,8 +4,11 @@ import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
 import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
+import social from "../assets/DigitalTransformation/social.svg"
+import destination from "../assets/DigitalTransformation/destination.svg"
+import mobile from "../assets/DigitalTransformation/mobile.svg"
 
 const DigitalTransformation = () => {
   return (
@@ -23,7 +26,9 @@ const DigitalTransformation = () => {
                 <KeepInformed />
               </div>
             </Col>
-            <Col className="header__right-col"></Col>
+            <Col className="header__right-col">
+              <Image src={mobile} fluid={true} />
+            </Col>
           </Row>
           <div className="space-4"></div>
           <div className="space-4"></div>
@@ -82,7 +87,9 @@ const DigitalTransformation = () => {
                 </div>
               </div>
             </Col>
-            <Col xl={5} className="digital__col-right"></Col>
+            <Col xl={5} className="digital__col-right">
+              <Image src={destination} fluid={true} />
+            </Col>
           </Row>
           <Row className="digital__row">
             <Col className="digital__col">
@@ -154,7 +161,7 @@ const DigitalTransformation = () => {
           </Row>
           <Row className="digital__row">
             <Col xl={12} className="digital__col-right">
-              PIC HERE
+              <Image src={social} fluid={true} />
             </Col>
           </Row>
           <Row className="digital__row">
