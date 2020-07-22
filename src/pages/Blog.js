@@ -5,8 +5,9 @@ import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
 import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
+import typewriter from "../assets/Blog/typewriter.svg"
 
 const Blog = () => (
   <>
@@ -23,7 +24,9 @@ const Blog = () => (
               <KeepInformed />
             </div>
           </Col>
-          <Col className="header__right-col"></Col>
+          <Col className="header__right-col">
+            <Image src={typewriter} fluid={true} />
+          </Col>
         </Row>
         <div className="space-4"></div>
         <div className="space-4"></div>
