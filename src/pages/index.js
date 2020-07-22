@@ -2,17 +2,20 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import Footer from "../components/Footer"
 import SEO from "../components/seo"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
 import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
-// import HomePage from "./Homepage"
-// import About from "./About"
+import status from "../assets/Homepage/status.svg"
+import data from "../assets/Homepage/data.svg"
+import study from "../assets/Homepage/study.svg"
+import opensource from "../assets/Homepage/opensource.svg"
+import security from "../assets/Homepage/security.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -30,7 +33,13 @@ const IndexPage = () => (
               <KeepInformed />
             </div>
           </Col>
-          <Col className="header__right-col"></Col>
+          <Col className="header__right-col">
+            <Image
+              className="homepage__header-image"
+              src={status}
+              fluid={true}
+            />
+          </Col>
         </Row>
         <div className="space-4"></div>
         <div className="space-4"></div>
@@ -59,7 +68,13 @@ const IndexPage = () => (
           </Col>
         </Row>
         <Row className="homepage__row">
-          <Col xl={5} className="homepage__col-left"></Col>
+          <Col xl={5} className="homepage__col-left">
+            <Image
+              // className="homepage__header-image"
+              src={study}
+              fluid={true}
+            />
+          </Col>
           <Col xl={7} className="homepage__col-right">
             <div className="text-wrapper">
               <div className="dot-wrapper">
@@ -154,11 +169,23 @@ const IndexPage = () => (
               </div>
             </div>
           </Col>
-          <Col className="homepage__col-right"></Col>
+          <Col className="homepage__col-right">
+            <Image
+              // className="homepage__header-image"
+              src={data}
+              fluid={true}
+            />
+          </Col>
         </Row>
         <div className="space-4"></div>
         <Row>
-          <Col className="homepage__col-left"></Col>
+          <Col className="homepage__col-left">
+            <Image
+              // className="homepage__header-image"
+              src={opensource}
+              fluid={true}
+            />
+          </Col>
           <Col className="homepage__col-right">
             <div className="sub-heading">Open Technology</div>
             <div className="text-wrapper">
@@ -233,7 +260,13 @@ const IndexPage = () => (
               </div>
             </div>
           </Col>
-          <Col className="homepage__col-right"></Col>
+          <Col className="homepage__col-right">
+            <Image
+              // className="homepage__header-image"
+              src={security}
+              fluid={true}
+            />
+          </Col>
         </Row>
       </Container>
     </section>

@@ -1,5 +1,6 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
+import contact from "../assets/Contact/contact.svg"
 
 const ContactForm = () => {
   return (
@@ -60,7 +61,11 @@ const ContactForm = () => {
             </div>
           </Col>
           <Col className="contact__col-right">
-            <div>Pic here</div>
+            <Image
+              // className="homepage__header-image"
+              src={contact}
+              fluid={true}
+            />
           </Col>
         </Row>
       </Container>
