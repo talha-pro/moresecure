@@ -4,8 +4,12 @@ import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
 import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
+import road from "../assets/Infrastructure/road.svg"
+import upgrade from "../assets/Infrastructure/upgrade.svg"
+import docker from "../assets/Infrastructure/docker.webp"
+import kubernetes from "../assets/Infrastructure/kubernetes.webp"
 
 const Infrastructure = () => {
   return (
@@ -23,7 +27,13 @@ const Infrastructure = () => {
                 <KeepInformed />
               </div>
             </Col>
-            <Col className="header__right-col"></Col>
+            <Col className="header__right-col">
+              <Image
+                className="homepage__header-image"
+                src={docker}
+                fluid={true}
+              />
+            </Col>
           </Row>
           <div className="space-4"></div>
           <div className="space-4"></div>
@@ -51,7 +61,9 @@ const Infrastructure = () => {
             </Col>
           </Row>
           <Row className="infra__row">
-            <Col xl={5} className="infra__col-left"></Col>
+            <Col xl={5} className="infra__col-left">
+              <Image src={road} fluid={true} />
+            </Col>
             <Col xl={7} className="homepage__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
@@ -174,7 +186,7 @@ const Infrastructure = () => {
           </Row>
           <Row className="infra__row">
             <Col xl={12} className="infra__col-right">
-              PIC HERE
+              <Image src={kubernetes} fluid={true} />
             </Col>
           </Row>
           <Row className="infra__row">
@@ -183,7 +195,9 @@ const Infrastructure = () => {
             </Col>
           </Row>
           <Row className="infra__row">
-            <Col xl={6} className="infra__col-left"></Col>
+            <Col xl={6} className="infra__col-left">
+              <Image src={upgrade} fluid={true} />
+            </Col>
             <Col xl={6} className="infra__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">

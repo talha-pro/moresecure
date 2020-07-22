@@ -4,8 +4,11 @@ import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
 import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
+import security from "../assets/Homepage/security.svg"
+import secure from "../assets/Security/secure.svg"
+import marketing from "../assets/Security/marketing.svg"
 
 const Security = () => {
   return (
@@ -23,7 +26,9 @@ const Security = () => {
                 <KeepInformed />
               </div>
             </Col>
-            <Col className="header__right-col"></Col>
+            <Col className="header__right-col">
+              <Image className="homepage__header" src={security} fluid={true} />
+            </Col>
           </Row>
           <div className="space-4"></div>
           <div className="space-4"></div>
@@ -51,7 +56,9 @@ const Security = () => {
             </Col>
           </Row>
           <Row className="security__row">
-            <Col xl={5} className="security__col-left"></Col>
+            <Col xl={5} className="security__col-left">
+              <Image src={marketing} fluid={true} />
+            </Col>
             <Col xl={7} className="security__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
@@ -140,17 +147,14 @@ const Security = () => {
             </Col>
           </Row>
           <Row className="security__row">
-            <Col xl={12} className="security__col-right">
-              PIC HERE
-            </Col>
-          </Row>
-          <Row className="security__row">
             <Col className="security__col">
               <div className="heading">Why Choose More Secure Computing</div>
             </Col>
           </Row>
           <Row className="security__row">
-            <Col xl={6} className="security__col-left"></Col>
+            <Col xl={6} className="security__col-left">
+              <Image src={secure} fluid={true} />
+            </Col>
             <Col xl={6} className="security__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
