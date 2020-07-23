@@ -13,6 +13,7 @@ import data from "../assets/Homepage/data.svg"
 import study from "../assets/Homepage/study.svg"
 import opensource from "../assets/Homepage/opensource.svg"
 import security from "../assets/Homepage/security.svg"
+// import blobone from "../assets/Homepage/blob-one.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -57,6 +58,9 @@ const IndexPage = () => (
       </svg>
     </header>
     <section className="homepage">
+      <div className="homepage__blob-one"></div>
+      <div className="homepage__blob-two"></div>
+      <div className="homepage__blob-three"></div>
       <Container className="homepage__container">
         <Row className="homepage__row">
           <Col className="homepage__col">

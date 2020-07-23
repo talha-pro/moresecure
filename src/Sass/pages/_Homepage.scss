@@ -1,6 +1,45 @@
 .homepage {
   display: flex;
   min-height: 200vh;
+  position: relative;
+
+  &__blob-one {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      223.3deg,
+      rgba(103, 168, 213, 0.6) 16.08%,
+      rgba(103, 168, 213, 0) 80.28%
+    ) !important;
+    top: 6%;
+    left: 75%;
+  }
+
+  &__blob-two {
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      223.3deg,
+      rgba(103, 168, 213, 0.6) 16.08%,
+      rgba(103, 168, 213, 0) 80.28%
+    ) !important;
+    top: 12%;
+    left: 60%;
+  }
+
+  &__blob-three {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: #70add8;
+    top: 22.5%;
+    left: 40%;
+  }
 
   &__container {
     display: flex;
