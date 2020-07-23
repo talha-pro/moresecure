@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Footer from "../components/Footer"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
@@ -6,9 +8,9 @@ import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
-import typewriter from "../assets/Blog/typewriter.svg"
+// import typewriter from "../assets/Blog/typewriter.svg"
 
-const Blog = () => (
+const Blog = ({ data }) => (
   <>
     <NavBar />
     <header className="header">
@@ -24,7 +26,11 @@ const Blog = () => (
             </div>
           </Col>
           <Col className="header__right-col">
-            <Image src={typewriter} fluid={true} />
+            <Img
+              fluid={data.blogHeaderImage.childImageSharp.fluid}
+              alt="Blog Header Image"
+            />
+            {/* <Image src={typewriter} fluid={true} /> */}
           </Col>
         </Row>
         <div className="space-4"></div>
@@ -62,3 +68,15 @@ const Blog = () => (
 )
 
 export default Blog
+
+export const query = graphql`
+  query {
+    blogHeaderImage: file(relativePath: { eq: "typewriter.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
