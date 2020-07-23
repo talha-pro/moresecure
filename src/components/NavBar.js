@@ -2,7 +2,7 @@ import React from "react"
 
 import { Container, Row, Col, Image } from "react-bootstrap"
 import { Link } from "gatsby"
-import logo from "../assets/logo-svg.svg"
+import logo from "../assets/logo.webp"
 
 const NavBar = () => {
   return (
