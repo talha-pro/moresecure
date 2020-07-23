@@ -6,7 +6,7 @@ import ContactForm from "../components/ContactForm"
 import NavBar from "../components/NavBar"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
-import typewriter from "../assets/Blog/typewriter.svg"
+import typewriter from "../assets/Blog/typewriter.webp"
 
 const Blog = () => (
   <>

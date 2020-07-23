@@ -8,7 +8,7 @@ import { Container, Row, Col, Image } from "react-bootstrap"
 import KeepInformed from "../components/KeepInformed"
 import social from "../assets/DigitalTransformation/social.svg"
 import destination from "../assets/DigitalTransformation/destination.svg"
-import mobile from "../assets/DigitalTransformation/mobile.svg"
+import mobile from "../assets/DigitalTransformation/mobile.webp"
 
 const DigitalTransformation = () => {
   return (
