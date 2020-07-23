@@ -1,6 +1,10 @@
 import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import logo from "../assets/logo-svg.svg"
+import fb from "../assets/fb.svg"
+import twitter from "../assets/twitter.svg"
+import insta from "../assets/insta.svg"
+import linkedin from "../assets/linkedin.svg"
 
 const Footer = () => {
   return (
@@ -20,10 +24,34 @@ const Footer = () => {
               <div className="space-3"></div>
               <div className="footer__social">
                 <div>FOLLOW US.</div>
-                <div>fb</div>
-                <div>fb</div>
-                <div>fb</div>
-                <div>fb</div>
+                <div className="footer__social-wrapper">
+                  <Image
+                    className="footer__social-icon"
+                    src={fb}
+                    fluid={true}
+                  />
+                </div>
+                <div className="footer__social-wrapper">
+                  <Image
+                    className="footer__social-icon"
+                    src={twitter}
+                    fluid={true}
+                  />
+                </div>
+                <div className="footer__social-wrapper">
+                  <Image
+                    className="footer__social-icon"
+                    src={linkedin}
+                    fluid={true}
+                  />
+                </div>
+                <div className="footer__social-wrapper">
+                  <Image
+                    className="footer__social-icon"
+                    src={insta}
+                    fluid={true}
+                  />
+                </div>
               </div>
             </Col>
             <Col className="footer__right-col">
