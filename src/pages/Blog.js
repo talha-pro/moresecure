@@ -56,12 +56,7 @@ const Blog = () => (
     </section>
     <OurValue />
     <Customers />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
     <ContactForm />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
     <Footer />
   </>
 )

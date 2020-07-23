@@ -52,7 +52,6 @@ const ContactForm = () => {
                     className="contact__form--input"
                     placeholder="Your Message"
                     rows="5"
-                    // cols=""
                     required
                   ></textarea>
                 </label>

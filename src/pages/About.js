@@ -237,8 +237,6 @@ const About = () => {
       </section>
       <OurValue />
       <ContactForm />
-      <div className="space-4"></div>
-      <div className="space-4"></div>
       <Footer />
     </>
   )
