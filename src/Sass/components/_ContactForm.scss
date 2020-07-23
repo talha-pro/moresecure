@@ -5,22 +5,18 @@
   justify-content: center;
   min-height: 70vh;
   height: max-content;
-  //   border: 1px solid red;
   font-family: "poppins", sans-serif;
 
   &__container {
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: 1px solid blue;
   }
 
   &__row {
-    // border: 1px solid yellow;
   }
 
   &__col-left {
-    // border: 1px solid green;
     z-index: 100;
   }
 
@@ -31,7 +27,6 @@
     padding: 5rem;
     border-radius: 1rem;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
-    // border: 1px solid blue;
   }
 
   &__form--heading {
@@ -46,7 +41,6 @@
   &__form {
     display: flex;
     flex-flow: row wrap;
-    // border: 1px solid yellow;
     width: 80%;
   }
 
@@ -84,11 +78,9 @@
     color: #1f3f68;
     opacity: 0.8;
     width: 100%;
-    // border: 1px solid green;
   }
 
   &__form--input-email {
-    // flex: 2;
     font-size: 1.8rem;
     color: #1f3f68;
     opacity: 0.4;
@@ -144,10 +136,15 @@
   }
 
   &__col-right {
-    // border: 1px solid palevioletred;
+    position: relative;
   }
 
   &__image {
+    position: absolute;
+    height: 30rem;
+    width: 50rem;
+    top: 35%;
+    left: -50%;
     z-index: 120;
   }
 }

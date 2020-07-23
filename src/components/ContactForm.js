@@ -51,6 +51,8 @@ const ContactForm = () => {
                   <textarea
                     className="contact__form--input"
                     placeholder="Your Message"
+                    rows="5"
+                    // cols=""
                     required
                   ></textarea>
                 </label>
@@ -61,11 +63,7 @@ const ContactForm = () => {
             </div>
           </Col>
           <Col className="contact__col-right">
-            <Image
-              // className="homepage__header-image"
-              src={contact}
-              fluid={true}
-            />
+            <Image className="contact__image" src={contact} fluid={false} />
           </Col>
         </Row>
       </Container>
