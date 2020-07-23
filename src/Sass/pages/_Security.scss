@@ -1,6 +1,45 @@
 .security {
   display: flex;
   min-height: 200vh;
+  position: relative;
+
+  &__blob-one {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      223.3deg,
+      rgba(103, 168, 213, 0.6) 16.08%,
+      rgba(103, 168, 213, 0) 80.28%
+    ) !important;
+    top: 20%;
+    left: 70%;
+  }
+
+  &__blob-two {
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: linear-gradient(
+      223.3deg,
+      rgba(103, 168, 213, 0.6) 16.08%,
+      rgba(103, 168, 213, 0) 80.28%
+    ) !important;
+    top: 16%;
+    left: 60%;
+  }
+
+  &__blob-three {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: rgba(103, 168, 213, 0.6);
+    top: 27%;
+    left: 40%;
+  }
 
   &__container {
     display: flex;

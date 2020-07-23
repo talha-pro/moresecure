@@ -49,6 +49,9 @@ const Security = () => {
         </svg>
       </header>
       <section className="security">
+        <div className="security__blob-one"></div>
+        <div className="security__blob-two"></div>
+        <div className="security__blob-three"></div>
         <Container className="security__container">
           <Row className="security__row">
             <Col className="security__col">
