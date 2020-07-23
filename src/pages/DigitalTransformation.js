@@ -49,6 +49,9 @@ const DigitalTransformation = () => {
         </svg>
       </header>
       <section className="digital">
+        <div className="digital__blob-one"></div>
+        <div className="digital__blob-two"></div>
+        <div className="digital__blob-three"></div>
         <Container className="digital__container">
           <Row className="digital__row">
             <Col className="digital__col">
