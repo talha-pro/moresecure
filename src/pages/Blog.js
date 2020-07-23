@@ -54,14 +54,7 @@ const Blog = () => (
         </Row>
       </Container>
     </section>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
     <OurValue />
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-    <div className="space-4"></div>
-
     <Customers />
     <div className="space-4"></div>
     <div className="space-4"></div>

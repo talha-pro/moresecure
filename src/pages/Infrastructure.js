@@ -235,10 +235,6 @@ const Infrastructure = () => {
       </section>
 
       <OurValue />
-      <div className="space-4"></div>
-      <div className="space-4"></div>
-      <div className="space-4"></div>
-
       <Customers />
       <div className="space-4"></div>
       <div className="space-4"></div>
