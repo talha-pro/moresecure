@@ -15,11 +15,11 @@ const Footer = () => {
             <Col className="footer__left-col">
               <div className="footer__address">
                 <div>
-                  A. 24-155 East Beaver Creek Road, Suite 218 Richmond Hill ON
-                  L4B 2N1 Canada
+                  A. &nbsp;24-155 East Beaver Creek Road, Suite 218 Richmond
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hill ON L4B 2N1 Canada
                 </div>
-                <div>T. 1-800-718-5280</div>
-                <div>E. info@moresecure.com</div>
+                <div>T. &nbsp;&nbsp;1-800-718-5280</div>
+                <div>E. &nbsp;&nbsp;info@moresecure.com</div>
               </div>
               <div className="space-3"></div>
               <div className="footer__social">
