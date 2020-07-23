@@ -30,6 +30,7 @@ const Blog = ({ data }) => (
               fluid={data.blogHeaderImage.childImageSharp.fluid}
               alt="Blog Header Image"
             />
+
             {/* <Image src={typewriter} fluid={true} /> */}
           </Col>
         </Row>
@@ -39,6 +40,7 @@ const Blog = ({ data }) => (
         <div className="space-4"></div>
         <div className="space-4"></div>
       </Container>
+
       <svg
         className="header__svg"
         xmlns="http://www.w3.org/2000/svg"
@@ -72,6 +74,13 @@ export default Blog
 export const query = graphql`
   query {
     blogHeaderImage: file(relativePath: { eq: "typewriter.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image: file(relativePath: { eq: "status.png" }) {
       childImageSharp {
         fluid(maxWidth: 720) {
           ...GatsbyImageSharpFluid

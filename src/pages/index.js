@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Footer from "../components/Footer"
 import SEO from "../components/seo"
@@ -14,7 +16,7 @@ import study from "../assets/Homepage/study.svg"
 import opensource from "../assets/Homepage/opensource.svg"
 import security from "../assets/Homepage/security.svg"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <NavBar />
@@ -31,10 +33,15 @@ const IndexPage = () => (
             </div>
           </Col>
           <Col className="header__right-col">
-            <Image
+            {/* <Image
               className="homepage__header-image"
               src={status}
               fluid={true}
+            /> */}
+            <Img
+              className="homepage__header-image"
+              fluid={data.image.childImageSharp.fluid}
+              alt="Blog Header Image"
             />
           </Col>
         </Row>
@@ -71,7 +78,11 @@ const IndexPage = () => (
         </Row>
         <Row className="homepage__row">
           <Col xl={6} className="homepage__col-left">
-            <Image src={study} fluid={true} />
+            <Img
+              fluid={data.studyImage.childImageSharp.fluid}
+              alt="Study Image"
+            />
+            {/* <Image src={study} fluid={true} /> */}
           </Col>
           <Col xl={6} className="homepage__col-right">
             <div className="text-wrapper">
@@ -167,14 +178,22 @@ const IndexPage = () => (
               </div>
             </div>
           </Col>
-          <Col className="homepage__col-right">
-            <Image src={data} fluid={true} />
+          <Col xl={6} className="homepage__col-right">
+            <Img
+              fluid={data.dataImage.childImageSharp.fluid}
+              alt="Data Image"
+            />
+            {/* <Image src={data} fluid={true} /> */}
           </Col>
         </Row>
         <div className="space-4"></div>
         <Row>
           <Col className="homepage__col-left">
-            <Image src={opensource} fluid={true} />
+            <Img
+              fluid={data.opensourceImage.childImageSharp.fluid}
+              alt="Opensource Image"
+            />
+            {/* <Image src={opensource} fluid={true} /> */}
           </Col>
           <Col className="homepage__col-right">
             <div className="sub-heading">Open Technology</div>
@@ -251,7 +270,11 @@ const IndexPage = () => (
             </div>
           </Col>
           <Col className="homepage__col-right">
-            <Image src={security} fluid={true} />
+            <Img
+              fluid={data.securityImage.childImageSharp.fluid}
+              alt="Study Image"
+            />
+            {/* <Image src={security} fluid={true} /> */}
           </Col>
         </Row>
       </Container>
@@ -264,3 +287,43 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const query = graphql`
+  query {
+    studyImage: file(relativePath: { eq: "study.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    image: file(relativePath: { eq: "status.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1080) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    dataImage: file(relativePath: { eq: "data.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    opensourceImage: file(relativePath: { eq: "opensource.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    securityImage: file(relativePath: { eq: "security.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1080) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

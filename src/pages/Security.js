@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Footer from "../components/Footer"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
@@ -10,7 +12,7 @@ import security from "../assets/Homepage/security.svg"
 import secure from "../assets/Security/secure.svg"
 import marketing from "../assets/Security/marketing.svg"
 
-const Security = () => {
+const Security = ({ data }) => {
   return (
     <>
       <NavBar />
@@ -27,7 +29,11 @@ const Security = () => {
               </div>
             </Col>
             <Col className="header__right-col">
-              <Image src={security} fluid={true} />
+              <Img
+                fluid={data.securityImage.childImageSharp.fluid}
+                alt="Security Image"
+              />
+              {/* <Image src={security} fluid={true} /> */}
             </Col>
           </Row>
           <div className="space-4"></div>
@@ -62,7 +68,11 @@ const Security = () => {
           </Row>
           <Row className="security__row">
             <Col xl={5} className="security__col-left">
-              <Image src={marketing} fluid={true} />
+              <Img
+                fluid={data.marketingImage.childImageSharp.fluid}
+                alt="marketing Image"
+              />
+              {/* <Image src={marketing} fluid={true} /> */}
             </Col>
             <Col xl={7} className="security__col-right">
               <div className="text-wrapper">
@@ -158,7 +168,11 @@ const Security = () => {
           </Row>
           <Row className="security__row">
             <Col xl={5} className="security__col-left">
-              <Image src={secure} fluid={true} />
+              <Img
+                fluid={data.secureImage.childImageSharp.fluid}
+                alt="Secure Image"
+              />
+              {/* <Image src={secure} fluid={true} /> */}
             </Col>
             <Col xl={7} className="security__col-right">
               <div className="text-wrapper">
@@ -211,3 +225,29 @@ const Security = () => {
 }
 
 export default Security
+
+export const query = graphql`
+  query {
+    securityImage: file(relativePath: { eq: "security.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1080) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    marketingImage: file(relativePath: { eq: "marketing.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    secureImage: file(relativePath: { eq: "secure.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

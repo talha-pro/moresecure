@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Footer from "../components/Footer"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
@@ -10,7 +12,7 @@ import social from "../assets/DigitalTransformation/social.svg"
 import destination from "../assets/DigitalTransformation/destination.svg"
 import mobile from "../assets/DigitalTransformation/mobile.svg"
 
-const DigitalTransformation = () => {
+const DigitalTransformation = ({ data }) => {
   return (
     <>
       <NavBar />
@@ -27,7 +29,11 @@ const DigitalTransformation = () => {
               </div>
             </Col>
             <Col className="header__right-col">
-              <Image src={mobile} fluid={true} />
+              <Img
+                fluid={data.mobileImage.childImageSharp.fluid}
+                alt="Mobile Image"
+              />
+              {/* <Image src={mobile} fluid={true} /> */}
             </Col>
           </Row>
           <div className="space-4"></div>
@@ -93,7 +99,11 @@ const DigitalTransformation = () => {
               </div>
             </Col>
             <Col xl={6} className="digital__col-right">
-              <Image src={destination} fluid={true} />
+              <Img
+                fluid={data.destinationImage.childImageSharp.fluid}
+                alt="Destination Image"
+              />
+              {/* <Image src={destination} fluid={true} /> */}
             </Col>
           </Row>
           <Row className="digital__row">
@@ -224,3 +234,29 @@ const DigitalTransformation = () => {
 }
 
 export default DigitalTransformation
+
+export const query = graphql`
+  query {
+    mobileImage: file(relativePath: { eq: "mobile.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    socialImage: file(relativePath: { eq: "social.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    destinationImage: file(relativePath: { eq: "destination.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

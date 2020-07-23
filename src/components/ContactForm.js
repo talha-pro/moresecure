@@ -1,8 +1,10 @@
 import React from "react"
+// import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import contact from "../assets/Contact/contact.svg"
 
-const ContactForm = () => {
+const ContactForm = ({ data }) => {
   return (
     <section className="contact">
       <Container className="contact__container">
@@ -62,6 +64,10 @@ const ContactForm = () => {
             </div>
           </Col>
           <Col className="contact__col-right">
+            {/* <Img
+              fluid={data.contactImage.childImageSharp.fluid}
+              alt="Contact Image"
+            /> */}
             <Image className="contact__image" src={contact} fluid={false} />
           </Col>
         </Row>

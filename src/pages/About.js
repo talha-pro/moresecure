@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import { Container, Row, Col, Image } from "react-bootstrap"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
@@ -29,7 +31,7 @@ import art from "../assets/About/art.svg"
 import KeepInformed from "../components/KeepInformed"
 import security from "../assets/Homepage/security.svg"
 
-const About = () => {
+const About = ({ data }) => {
   return (
     <>
       <NavBar />
@@ -46,7 +48,11 @@ const About = () => {
               </div>
             </Col>
             <Col className="header__right-col">
-              <Image src={security} fluid={true} />
+              <Img
+                fluid={data.securityImage.childImageSharp.fluid}
+                alt="Security Image"
+              />
+              {/* <Image src={security} fluid={true} /> */}
             </Col>
           </Row>
           <div className="space-4"></div>
@@ -243,3 +249,15 @@ const About = () => {
 }
 
 export default About
+
+export const query = graphql`
+  query {
+    securityImage: file(relativePath: { eq: "security.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

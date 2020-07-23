@@ -1,4 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Footer from "../components/Footer"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
@@ -11,7 +13,7 @@ import upgrade from "../assets/Infrastructure/upgrade.svg"
 import docker from "../assets/Infrastructure/docker.webp"
 import kubernetes from "../assets/Infrastructure/kubernetes.webp"
 
-const Infrastructure = () => {
+const Infrastructure = ({ data }) => {
   return (
     <>
       <NavBar />
@@ -28,7 +30,11 @@ const Infrastructure = () => {
               </div>
             </Col>
             <Col className="header__right-col">
-              <Image src={docker} fluid={true} />
+              <Img
+                fluid={data.dockerImage.childImageSharp.fluid}
+                alt="Docker Image"
+              />
+              {/* <Image src={docker} fluid={true} /> */}
             </Col>
           </Row>
           <div className="space-4"></div>
@@ -63,7 +69,11 @@ const Infrastructure = () => {
           </Row>
           <Row className="infra__row">
             <Col xl={6} className="infra__col-left">
-              <Image src={road} fluid={true} />
+              <Img
+                fluid={data.roadImage.childImageSharp.fluid}
+                alt="Road Image"
+              />
+              {/* <Image src={road} fluid={true} /> */}
             </Col>
             <Col xl={6} className="homepage__col-right">
               <div className="text-wrapper">
@@ -187,7 +197,11 @@ const Infrastructure = () => {
           </Row>
           <Row className="infra__row">
             <Col className="infra__col-kubernetes">
-              <Image src={kubernetes} fluid={true} />
+              <Img
+                fluid={data.kubernetesImage.childImageSharp.fluid}
+                alt="Kubernetes Image"
+              />
+              {/* <Image src={kubernetes} fluid={true} /> */}
             </Col>
           </Row>
           <Row className="infra__row">
@@ -197,7 +211,11 @@ const Infrastructure = () => {
           </Row>
           <Row className="infra__row">
             <Col xl={5} className="infra__col-left">
-              <Image src={upgrade} fluid={true} />
+              <Img
+                fluid={data.upgradeImage.childImageSharp.fluid}
+                alt="Upgrade Image"
+              />
+              {/* <Image src={upgrade} fluid={true} /> */}
             </Col>
             <Col xl={7} className="infra__col-right">
               <div className="text-wrapper">
@@ -242,3 +260,36 @@ const Infrastructure = () => {
 }
 
 export default Infrastructure
+
+export const query = graphql`
+  query {
+    dockerImage: file(relativePath: { eq: "docker.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    kubernetesImage: file(relativePath: { eq: "kubernetes.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 1080) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    roadImage: file(relativePath: { eq: "road.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    upgradeImage: file(relativePath: { eq: "upgrade.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 720) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
