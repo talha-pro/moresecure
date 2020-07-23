@@ -50,6 +50,9 @@ const Infrastructure = () => {
         </svg>
       </header>
       <section className="infra">
+        <div className="infra__blob-one"></div>
+        <div className="infra__blob-two"></div>
+        <div className="infra__blob-three"></div>
         <Container className="infra__container">
           <Row className="infra__row">
             <Col className="infra__col">
