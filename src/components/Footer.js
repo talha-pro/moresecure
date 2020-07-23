@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import logo from "../assets/logo-svg.svg"
+import logo from "../assets/logo.webp"
 import fb from "../assets/fb.svg"
 import twitter from "../assets/twitter.svg"
 import insta from "../assets/insta.svg"
