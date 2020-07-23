@@ -1,5 +1,4 @@
 import React from "react"
-// import Layout from "../components/layout"
 import Footer from "../components/Footer"
 import Customers from "../components/Customers"
 import OurValue from "../components/OurValue"
@@ -28,6 +27,8 @@ const Blog = () => (
             <Image src={typewriter} fluid={true} />
           </Col>
         </Row>
+        <div className="space-4"></div>
+        <div className="space-4"></div>
         <div className="space-4"></div>
         <div className="space-4"></div>
         <div className="space-4"></div>
