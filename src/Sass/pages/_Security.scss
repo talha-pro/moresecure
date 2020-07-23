@@ -1,35 +1,33 @@
 .security {
-  padding-top: 5rem;
   display: flex;
   min-height: 200vh;
-  //   border: 1px solid red;
 
   &__container {
     display: flex;
     flex-flow: column;
     align-items: center;
-    // justify-content: center;
-    // border: 1px solid blue;
   }
   &__row {
-    // min-height: 50vh;
     display: flex;
     justify-content: center;
-
     width: 100%;
-    // border: 1px solid black;
   }
 
   &__col {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    // border: 1px solid yellow;
   }
 
+  &__col-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
   &__col-right {
     display: flex;
     flex-flow: column;
     align-items: flex-start;
+    justify-content: flex-start;
   }
 }

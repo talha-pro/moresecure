@@ -27,9 +27,11 @@ const Security = () => {
               </div>
             </Col>
             <Col className="header__right-col">
-              <Image className="homepage__header" src={security} fluid={true} />
+              <Image src={security} fluid={true} />
             </Col>
           </Row>
+          <div className="space-4"></div>
+          <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
@@ -152,10 +154,10 @@ const Security = () => {
             </Col>
           </Row>
           <Row className="security__row">
-            <Col xl={6} className="security__col-left">
+            <Col xl={5} className="security__col-left">
               <Image src={secure} fluid={true} />
             </Col>
-            <Col xl={6} className="security__col-right">
+            <Col xl={7} className="security__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
                   <div className="dot" />
