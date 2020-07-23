@@ -13,7 +13,6 @@ import data from "../assets/Homepage/data.svg"
 import study from "../assets/Homepage/study.svg"
 import opensource from "../assets/Homepage/opensource.svg"
 import security from "../assets/Homepage/security.svg"
-// import blobone from "../assets/Homepage/blob-one.svg"
 
 const IndexPage = () => (
   <Layout>
@@ -252,11 +251,7 @@ const IndexPage = () => (
             </div>
           </Col>
           <Col className="homepage__col-right">
-            <Image
-              // className="homepage__header-image"
-              src={security}
-              fluid={true}
-            />
+            <Image src={security} fluid={true} />
           </Col>
         </Row>
       </Container>
