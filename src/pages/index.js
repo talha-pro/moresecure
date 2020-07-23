@@ -67,10 +67,10 @@ const IndexPage = () => (
           </Col>
         </Row>
         <Row className="homepage__row">
-          <Col xl={5} className="homepage__col-left">
+          <Col xl={6} className="homepage__col-left">
             <Image src={study} fluid={true} />
           </Col>
-          <Col xl={7} className="homepage__col-right">
+          <Col xl={6} className="homepage__col-right">
             <div className="text-wrapper">
               <div className="dot-wrapper">
                 <div className="dot" />

@@ -33,6 +33,8 @@ const DigitalTransformation = () => {
           <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
+          <div className="space-4"></div>
+          <div className="space-4"></div>
         </Container>
         <svg
           className="header__svg"
@@ -57,7 +59,7 @@ const DigitalTransformation = () => {
             </Col>
           </Row>
           <Row className="digital__row">
-            <Col xl={7} className="digital__col-left">
+            <Col xl={6} className="digital__col-left">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
                   <div className="dot" />
@@ -87,7 +89,7 @@ const DigitalTransformation = () => {
                 </div>
               </div>
             </Col>
-            <Col xl={5} className="digital__col-right">
+            <Col xl={6} className="digital__col-right">
               <Image src={destination} fluid={true} />
             </Col>
           </Row>
@@ -160,7 +162,7 @@ const DigitalTransformation = () => {
             </Col>
           </Row>
           <Row className="digital__row">
-            <Col xl={12} className="digital__col-right">
+            <Col className="digital__col-social">
               <Image src={social} fluid={true} />
             </Col>
           </Row>
@@ -212,9 +214,6 @@ const DigitalTransformation = () => {
       </section>
 
       <OurValue />
-      <div className="space-4"></div>
-      <div className="space-4"></div>
-      <div className="space-4"></div>
 
       <Customers />
       <div className="space-4"></div>
