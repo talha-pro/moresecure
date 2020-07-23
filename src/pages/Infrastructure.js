@@ -28,13 +28,11 @@ const Infrastructure = () => {
               </div>
             </Col>
             <Col className="header__right-col">
-              <Image
-                className="homepage__header-image"
-                src={docker}
-                fluid={true}
-              />
+              <Image src={docker} fluid={true} />
             </Col>
           </Row>
+          <div className="space-4"></div>
+          <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
@@ -61,10 +59,10 @@ const Infrastructure = () => {
             </Col>
           </Row>
           <Row className="infra__row">
-            <Col xl={5} className="infra__col-left">
+            <Col xl={6} className="infra__col-left">
               <Image src={road} fluid={true} />
             </Col>
-            <Col xl={7} className="homepage__col-right">
+            <Col xl={6} className="homepage__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
                   <div className="dot" />
@@ -185,7 +183,7 @@ const Infrastructure = () => {
             </Col>
           </Row>
           <Row className="infra__row">
-            <Col xl={12} className="infra__col-right">
+            <Col className="infra__col-kubernetes">
               <Image src={kubernetes} fluid={true} />
             </Col>
           </Row>
@@ -195,10 +193,10 @@ const Infrastructure = () => {
             </Col>
           </Row>
           <Row className="infra__row">
-            <Col xl={6} className="infra__col-left">
+            <Col xl={5} className="infra__col-left">
               <Image src={upgrade} fluid={true} />
             </Col>
-            <Col xl={6} className="infra__col-right">
+            <Col xl={7} className="infra__col-right">
               <div className="text-wrapper">
                 <div className="dot-wrapper">
                   <div className="dot" />
