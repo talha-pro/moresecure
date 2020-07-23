@@ -1,7 +1,5 @@
 import React from "react"
-import Layout from "../components/layout"
 import { Container, Row, Col, Image } from "react-bootstrap"
-import { Link } from "gatsby"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 import ContactForm from "../components/ContactForm"
@@ -24,10 +22,10 @@ import docker from "../assets/About/docker.png"
 import housecall from "../assets/About/housecall.png"
 import nicejob from "../assets/About/nicejob.png"
 import armor from "../assets/About/armor.png"
-import arcsight from "../assets/About/arcsight.png"
-import enterasys from "../assets/About/enterasys.jpeg"
-import altor from "../assets/About/altor.png"
-import art from "../assets/About/art.png"
+import arcsight from "../assets/About/arcsight.svg"
+import enterasys from "../assets/About/enterasys.svg"
+import altor from "../assets/About/altor.svg"
+import art from "../assets/About/art.svg"
 import KeepInformed from "../components/KeepInformed"
 import security from "../assets/Homepage/security.svg"
 
@@ -51,6 +49,8 @@ const About = () => {
               <Image src={security} fluid={true} />
             </Col>
           </Row>
+          <div className="space-4"></div>
+          <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
           <div className="space-4"></div>
@@ -235,8 +235,16 @@ const About = () => {
           </Row>
         </Container>
       </section>
+      <div className="space-4"></div>
+      <div className="space-4"></div>
+      <div className="space-4"></div>
       <OurValue />
+      <div className="space-4"></div>
+      <div className="space-4"></div>
+      <div className="space-4"></div>
       <ContactForm />
+      <div className="space-4"></div>
+      <div className="space-4"></div>
       <Footer />
     </>
   )
