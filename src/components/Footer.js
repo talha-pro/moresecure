@@ -1,5 +1,6 @@
 import React from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
+import logo from "../assets/logo-svg.svg"
 
 const Footer = () => {
   return (
@@ -26,6 +27,7 @@ const Footer = () => {
               </div>
             </Col>
             <Col className="footer__right-col">
+              <Image src={logo} fluid={true} />
               <p>
                 Empower More Secure customers to win more business , to run
                 business more efficiently and securely with affordable open

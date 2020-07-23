@@ -64,7 +64,7 @@ const ContactForm = () => {
             <Image
               // className="homepage__header-image"
               src={contact}
-              // fluid={true}
+              fluid={true}
             />
           </Col>
         </Row>

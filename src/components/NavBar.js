@@ -1,7 +1,8 @@
 import React from "react"
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Image } from "react-bootstrap"
 import { Link } from "gatsby"
+import logo from "../assets/logo-svg.svg"
 
 const NavBar = () => {
   return (
@@ -10,7 +11,7 @@ const NavBar = () => {
         <Row className="nav__row">
           <Col className="nav__col-left" xl={4}>
             <Link className="nav__logo" to="/">
-              MoreSecure Logo
+              <Image src={logo} fluid={true} />
             </Link>
           </Col>
           <Col className="nav__col-right" xl={8}>

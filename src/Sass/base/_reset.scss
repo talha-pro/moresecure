@@ -18,12 +18,19 @@ body {
   display: flex;
   min-height: 80vh;
   height: max-content;
-  background: rgb(255, 255, 255);
+
   background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(112, 173, 216, 1) 350%
+    0deg,
+    rgba(16, 112, 177, 0.25) 0%,
+    rgba(196, 196, 196, 0) 33.98%
   );
+
+  // background: rgb(255, 255, 255);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(255, 255, 255, 1) 0%,
+  //   rgba(112, 173, 216, 1) 350%
+  // );
 
   &__svg {
     position: absolute;
