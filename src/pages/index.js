@@ -1,8 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import Footer from "../components/Footer"
 import SEO from "../components/seo"
 import Customers from "../components/Customers"
@@ -44,6 +41,8 @@ const IndexPage = () => (
         <div className="space-4"></div>
         <div className="space-4"></div>
         <div className="space-4"></div>
+        <div className="space-4"></div>
+        <div className="space-4"></div>
       </Container>
       <svg
         className="header__svg"
@@ -69,11 +68,7 @@ const IndexPage = () => (
         </Row>
         <Row className="homepage__row">
           <Col xl={5} className="homepage__col-left">
-            <Image
-              // className="homepage__header-image"
-              src={study}
-              fluid={true}
-            />
+            <Image src={study} fluid={true} />
           </Col>
           <Col xl={7} className="homepage__col-right">
             <div className="text-wrapper">
@@ -170,21 +165,13 @@ const IndexPage = () => (
             </div>
           </Col>
           <Col className="homepage__col-right">
-            <Image
-              // className="homepage__header-image"
-              src={data}
-              fluid={true}
-            />
+            <Image src={data} fluid={true} />
           </Col>
         </Row>
         <div className="space-4"></div>
         <Row>
           <Col className="homepage__col-left">
-            <Image
-              // className="homepage__header-image"
-              src={opensource}
-              fluid={true}
-            />
+            <Image src={opensource} fluid={true} />
           </Col>
           <Col className="homepage__col-right">
             <div className="sub-heading">Open Technology</div>

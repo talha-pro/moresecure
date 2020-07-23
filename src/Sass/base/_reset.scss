@@ -14,10 +14,12 @@ body {
 
 .header {
   position: relative;
-  padding-top: 15rem;
+  padding-top: 10rem;
   display: flex;
+  align-items: center;
   min-height: 80vh;
   height: max-content;
+  margin-bottom: -8rem;
 
   background: linear-gradient(
     0deg,
@@ -25,17 +27,9 @@ body {
     rgba(196, 196, 196, 0) 33.98%
   );
 
-  // background: rgb(255, 255, 255);
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(255, 255, 255, 1) 0%,
-  //   rgba(112, 173, 216, 1) 350%
-  // );
-
   &__svg {
     position: absolute;
     top: 65%;
-    // left: 5%;
   }
 }
 
