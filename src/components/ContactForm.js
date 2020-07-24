@@ -11,9 +11,9 @@ const ContactForm = ({ data }) => {
         <Row className="contact__row">
           <Col xl={8} className="contact__col-left">
             <div className="contact__form-wrapper">
+              <div className="contact__form--heading">CONTACT US TODAY</div>
               <div className="contact__form--heading">
-                CONTACT US TODAY TO MAKE SURE YOUR BUSINESS IS IN THE RIGHT
-                DIRECTION
+                TO MAKE SURE YOUR BUSINESS IS IN THE RIGHT DIRECTION
               </div>
               <form className="contact__form">
                 <div className="contact__form-names">
